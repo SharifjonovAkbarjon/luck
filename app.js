@@ -53,11 +53,15 @@
 
 
 
-      but.addEventListener("mouseenter", ()=>{
+    btn.addEventListener("mouseenter", ()=>{
         console.log("mouse enter");
         sidebarOpen()   
        })
     
+    btn.addEventListener("mouseleave", ()=>{
+        sidebarOpen()   
+   
+       })
 
         function sidebarOpen(){
             game.classList.toggle("show")
